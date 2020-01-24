@@ -5,7 +5,7 @@ public class StringUtilities {
      * @return `input`
      */
     public String returnInput(String input) {
-        return null;
+        return input;
     }
 
     /**
@@ -14,7 +14,7 @@ public class StringUtilities {
      * @return the concatenation of `baseValue` and `valueToBeAdded`
      */
     public String concatenate(String baseValue, String valueToBeAdded) {
-        return null;
+        return baseValue + valueToBeAdded;
     }
 
     /**
@@ -22,7 +22,18 @@ public class StringUtilities {
      * @return identical string with characters in opposite order
      */
     public String reverse(String valueToBeReversed) {
-        return null;
+        char[] in = valueToBeReversed.toCharArray();
+        int begin=0;
+        int end=in.length-1;
+        char temp;
+        while(end>begin){
+        temp = in[begin];
+        in[begin]=in[end];
+        in[end] = temp;
+        end--;
+        begin++;
+    }
+    return new String(in);
     }
 
     /**
@@ -30,8 +41,12 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        return null;
-    }
+        int len=word.length();
+	int c=len/2;
+	char ch[]=word.toCharArray();
+	return ch[c];
+
+}
 
     /**
      * @param value value to have character removed from
@@ -39,7 +54,15 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+       String res = "";
+       for(int i = 0; i<value.length(); i++){
+           String index = "";
+           index += value.charAt(i);
+           String str = String.valueOf(charToRemove);
+           if(!index.equals(str))
+           res += value.charAt(i);
+        }
+        return res;
     }
 
     /**
@@ -47,6 +70,7 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+       String lastWord = sentence.substring(sentence.lastIndexOf(" ")+1);
+       return lastWord;
     }
 }

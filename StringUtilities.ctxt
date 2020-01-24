@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=StringUtilities
+comment1.params=input
+comment1.target=java.lang.String\ returnInput(java.lang.String)
+comment1.text=\n\ @param\ input\ value\ to\ be\ returned\n\ @return\ `input`\n
+comment2.params=baseValue\ valueToBeAdded
+comment2.target=java.lang.String\ concatenate(java.lang.String,\ java.lang.String)
+comment2.text=\n\ @param\ baseValue\ value\ to\ be\ added\ to\n\ @param\ valueToBeAdded\ value\ to\ add\n\ @return\ the\ concatenation\ of\ `baseValue`\ and\ `valueToBeAdded`\n
+comment3.params=valueToBeReversed
+comment3.target=java.lang.String\ reverse(java.lang.String)
+comment3.text=\n\ @param\ valueToBeReversed\ value\ to\ be\ reversed\n\ @return\ identical\ string\ with\ characters\ in\ opposite\ order\n
+comment4.params=word
+comment4.target=java.lang.Character\ getMiddleCharacter(java.lang.String)
+comment4.text=\n\ @param\ word\ word\ to\ get\ middle\ character\ of\n\ @return\ middle\ character\ of\ `word`\n
+comment5.params=value\ charToRemove
+comment5.target=java.lang.String\ removeCharacter(java.lang.String,\ java.lang.Character)
+comment5.text=\n\ @param\ value\ value\ to\ have\ character\ removed\ from\n\ @param\ charToRemove\ character\ to\ be\ removed\ from\ `value`\n\ @return\ `value`\ with\ char\ of\ value\ `charToRemove`\ removed\n
+comment6.params=sentence
+comment6.target=java.lang.String\ getLastWord(java.lang.String)
+comment6.text=\n\ @param\ sentence\ String\ delimited\ by\ spaces\ representative\ of\ a\ sentence\n\ @return\ last\ `word`\ in\ sentence\n
+numComments=7
